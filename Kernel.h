@@ -1,0 +1,2 @@
+void BeforeRun();
+void Run();
