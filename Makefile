@@ -1,9 +1,9 @@
 all:
 	make build
-	./ChaOS2CPP
+	./bin/ChaOS2CPP
 
 build:
-	g++ -g -Wall Main.cpp Kernel.cpp Core/Core.cpp -o ChaOS2CPP
+	g++ -g -Wall src/Main.cpp src/Kernel.cpp src/Core/Core.cpp -o bin/ChaOS2CPP
 
 clean:
-	rm ChaOS2CPP
+	rm bin/ChaOS2CPP
