@@ -1,5 +1,5 @@
 # ChaOS2CPP
-[![build](https://github.com/9xbt/ChaOS2CPP/actions/workflows/makefile.yml/badge.svg)](https://github.com/9xbt/ChaOS2CPP/actions/workflows/makefile.yml)
+![build](https://github.com/9xbt/ChaOS2CPP/actions/workflows/makefile.yml/badge.svg)
 
 A ChaOS port to C++ available on Linux
 
