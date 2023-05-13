@@ -40,12 +40,12 @@ void Run() {
         clog(" xrc2 - Contributor\n", ConsoleColor::BrightYellow);
     }
 
-    else if (String::StartsWith(input, "clear")) {
+    else if (String::StartsWith(input, "cls") || String::StartsWith(input, "clear")) {
         Console::Clear();
     }
 
     else if (String::StartsWith(input, "time")) {
-        clog("\nCurrent time is " + std::to_string(Time::Minutes()) + ":" + std::to_string(Time::Hours()) + "\n", ConsoleColor::BrightYellow);
+        clog("\nCurrent time is " + std::to_string(Time::Hours()) + ":" + std::to_string(Time::Minutes()) + "\n", ConsoleColor::BrightYellow);
     }
 
     else if (String::StartsWith(input, "echo")) {
