@@ -1,5 +1,3 @@
-// Not finished! -xrc2
-
 #include <iostream>
 #include "Core/Core.h"
 #include "Plugs/Console.h"
@@ -25,6 +23,8 @@ void Run() {
     std::string input;
     std::getline(std::cin, input);
     input = String::Trim(input);
+
+    // Commands section
 
     if (String::StartsWith(input, "help")) {
         clog("\nFunctions:", ConsoleColor::Green);

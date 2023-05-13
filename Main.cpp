@@ -3,6 +3,7 @@
 
 int main(void) 
 {
+    // This is what the bootloader would do
     try {
         BeforeRun();
         while (true) {
