@@ -1,6 +1,7 @@
 #include <iostream>
-#include <string>
-#include <algorithm>
+
+#ifndef STRING_H
+#define STRING_H
 
 class String {
     public:
@@ -19,11 +20,12 @@ class String {
         }
 
         static bool StartsWith(const std::string str, const std::string cmp) {
-            if (str.rfind(cmp, 0) == 0) {
-                return true;
-            }
-            else {
-                return false;
-            }
+            return (bool)str.rfind(cmp, 0) == 0;
+        }
+
+        static std::string Substring(const std::string str, const std::string word) {
+            return str.substr(str.find(word)).substr(word.length());
         }
 };
+
+#endif

@@ -1,10 +1,15 @@
 #include "Kernel.h"
+#include "Core/Core.h"
 
 int main(void) 
 {
-    BeforeRun();
-    while (true) {
-        Run();
+    try {
+        BeforeRun();
+        while (true) {
+            Run();
+        }
+    } catch (...) {
+        clog("\nAn error ocurred while running ChaOS2C++!\n", ConsoleColor::Red);
+        return 1;
     }
-    return 0;
 }

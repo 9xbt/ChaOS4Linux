@@ -27,6 +27,15 @@ class Console {
         static void Clear() {
             std::cout << "\033[2J\033[1;1H";
         }
+        static void Beep() {
+            std::cout << "\a";
+        }
+        static void SetCursorPosition(int Left, int Top) {
+            std::cout << "\033[" << Left << ";" << Top << "H";
+        }
+        static void SetScreenColor(ConsoleColor ForeColor, ConsoleColor BackColor) {
+            std::cout << "\x1b[2;" + std::to_string((int)ForeColor) + ";" + std::to_string((int)BackColor) + "m";
+        }
 };
 
 #endif
